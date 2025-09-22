@@ -24,7 +24,8 @@
     <div class=" ">
 
         <!-- first section  -->
-        <nav class="w-full z-50 fixed text-white bg-none flex justify-between px-4 py-6 md:px-20 mx-auto bg-black md:bg-transparent bg-opacity-30">
+        <nav
+            class="w-full z-50 fixed text-white bg-none flex justify-between px-4 py-6 md:px-20 mx-auto bg-black md:bg-transparent bg-opacity-30">
             <!-- hero section  -->
             <div class="flex  items-center">
                 <p>
@@ -32,30 +33,195 @@
                 </p>
             </div>
 
+            <!-- nav-bar links  -->
             <div class="flex justify-between items-center space-x-5 text-sm">
+
                 <div class="space-x-5 font-extralight hidden lg:flex ">
-                    <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
-                        <p> Home</p>
-                    </a>
+                    <div>
+                        <!-- Home -->
+                        <button id="home-btn" data-dropdown-toggle="dropdown"
+                            class="text-white bg-transparent hover:text-[#F5b754] hover:scale-105 transition duration-300 ease-in-out focus:outline-none font-medium text-sm text-center inline-flex items-center"
+                            type="button">
+                            Home
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#333]">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slider</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Image</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Image 2</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Video</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slideshow</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slideshow 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- About  -->
                     <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
                         <p> About</p>
                     </a>
-                    <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
-                        <p> Services</p>
-                    </a>
-                    <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
-                        <p> Cars</p>
-                    </a>
+
+
+
+                    <!-- Services  -->
+                    <div>
+                        <!-- Services -->
+                        <button id="service-btn" data-dropdown-toggle="dropdown"
+                            class="text-white bg-transparent hover:text-[#F5b754] hover:scale-105 transition duration-300 ease-in-out focus:outline-none font-medium text-sm text-center inline-flex items-center"
+                            type="button">
+                            Services
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="service-dropdown" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#333]">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slider</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Image</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Image 2</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Video</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slideshow</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slideshow 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Cars  -->
+                    <div>
+                        <button id="" data-dropdown-toggle="dropdown"
+                            class="text-white bg-transparent hover:text-[#F5b754] hover:scale-105 transition duration-300 ease-in-out focus:outline-none font-medium text-sm text-center inline-flex items-center"
+                            type="button">
+                            Cars
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#333]">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slider</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Image</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Image 2</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Video</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slideshow</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">Home
+                                        Slideshow 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Pages  -->
                     <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
                         <p> Pages</p>
                     </a>
+
+
+
+                    <!-- Blog  -->
                     <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
                         <p> Blog</p>
                     </a>
+
+
+
+                    <!-- Contact -->
                     <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
                         <p> Contact</p>
                     </a>
-                    <p class="border-l-1 pl-5 h-5 border-white hover:border-[#f5b754]">
+
+
+
+                    <!-- Call icon -->
+                    <p class="border-l-1 pl -5 h-5 border-white hover:border-[#f5b754]">
                         <a href="">
                             <!-- <iconify-icon icon="streamline-freehand:shopping-cart-trolley" width="20" height="20"
                                 style="color: #fff" class="hover:scale-110 transition duration-300 ease-in-out ">
@@ -86,6 +252,8 @@
                 </div>
             </div>
         </nav>
+        <!-- end of hero section  -->
+
 
         <!-- Rental carousel -->
         <div id="default-carousel" class="relative w-full h-screen sm:h-auto md:h-screen" data-carousel="slide">
@@ -267,15 +435,17 @@
 
 
                 <div class="bg-black p-7 rounded-tr-[40px] absolute bottom-">
-                    <p class="rounded-full bg-black px-3 py-3 border border-[#f5b754] flex items-center justify-center hover:scale-110 transition duration-300 ease-in-out">
-                        <iconify-icon icon="carbon:play" width="20" height="20"  style="color: #fff"></iconify-icon>
+                    <p
+                        class="rounded-full bg-black px-3 py-3 border border-[#f5b754] flex items-center justify-center hover:scale-110 transition duration-300 ease-in-out">
+                        <iconify-icon icon="carbon:play" width="20" height="20" style="color: #fff"></iconify-icon>
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- third section >> Book -->
-        <div class="text-white w-full h-scree md:h- py-15 bg-[url(/images/book.jpg)] bg-cover bg-center bg-no-repeat bg-[#333] bg-blend-overlay flex flex-col justify-center items-center space-y-7 md:bg-fixed">
+        <div
+            class="text-white w-full h-screen md:h- py-15 bg-[url(/images/book.jpg)] bg-cover bg-center bg-no-repeat bg-[#333] bg-blend-overlay flex flex-col justify-center items-center space-y-7 md:bg-fixed">
             <div class="flex flex-col items-center ">
                 <p class="text-[#f5b754] text-[10px] tracking-[4px] uppercase">
                     rent now
@@ -286,18 +456,68 @@
             </div>
 
             <!-- dropdown bookings  -->
-            <div class="bg-[#333] text-gray-300 rounded-2xl md:text-[#f4f4f4] md:rounded-full p-7 flex flex-col justify-center items-center space-y-5 md:flex-row md:space-y-0 md:space-x-7 ">
-                <p>Choose Car Type</p>
-                <p>Pick Up Location</p>
-                <p>Pick Up Date</p>
-                <p>Drop Off Location</p>
-                <p>Return Date</p>
-            </div>
-            <button>
-                
-            </button>
-        </div>
+            <div
+                class="bg-[#333] text-[#ffffff80] rounded-2xl md:text-[#f4f4f4] md:rounded-full p-7 flex flex-col justify-center items-center space-y-5 md:flex-row md:space-y-0 md:space-x-7 ">
 
+                <div>
+                    <select
+                        class="bg-[#333] border border-[#ffffff80] rounded-full px-5 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
+                        <option selected disabled>Choose Car Type</option>
+                        <option>Sedan</option>
+                        <option>SUV</option>
+                        <option>Coupe</option>
+                        <option>Convertible</option>
+                        <option>Hatchback</option>
+                        <option>Minivan</option>
+                        <option>Pickup Truck</option>
+                    </select>
+
+                </div>
+                <div>
+                    <select
+                        class="bg-[#333] border border-[#ffffff80] rounded-full px-5 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
+                        <option selected disabled>Pick Up Location</option>
+                        <option>New York</option>
+                        <option>Los Angeles</option>
+                        <option>Chicago</option>
+                        <option>Houston</option>
+                        <option>Phoenix</option>
+                        <option>Philadelphia</option>
+                        <option>San Antonio</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="date"
+                        class="bg-[#333] border border-[#ffffff80] rounded-full px-5 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent"
+                        placeholder="Pick Up Date">
+                </div>
+
+                <div>
+                    <select
+                        class="bg-[#333] border border-[#ffffff80] rounded-full px-5 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
+                        <option selected disabled>Drop Off Location</option>
+                        <option>New York</option>
+                        <option>Los Angeles</option>
+                        <option>Chicago</option>
+                        <option>Houston</option>
+                        <option>Phoenix</option>
+                        <option>Philadelphia</option>
+                        <option>San Antonio</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="date"
+                        class="bg-[#333] border border-[#ffffff80] rounded-full px-5 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent"
+                        placeholder="Return Date">
+                </div>
+
+                <button>
+
+                </button>
+            </div>
+        </div>
 
 
 
