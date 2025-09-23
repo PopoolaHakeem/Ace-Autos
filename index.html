@@ -23,22 +23,28 @@
 <body>
     <div class=" ">
 
-        <div id="mobileMenu" class="hidden w-[70%] absolute top-19 fixed z-50  md:hidden">
-           <div class=" w-full h-screen bg-black text-[18px] text-white px-4 py-10 space-y-5 flex flex-col items-start">
-            <p>kkkkk</p>
-            <p>kkkkk</p>
-            <p>kkkkk</p>
-            <p>kkkkk</p>
-            <p>kkkkk</p>
-            <p>kkkkk</p>
-            <p>kkkkk</p>
-            <p>kkkkk</p>
-           </div>
+        <div id="mobileMenu" class="hidde w-[70%] absolute top-19 fixed z-50  md:hidden animate-slide-in-left duration-300 ease-in-out right-0">
+            <div
+                class=" w-full h-screen bg-black text-[18px] text-white px-4 py-10 space-y-5 flex flex-col items-start">
+                <p>kkkkk</p>
+                <p>kkkkk</p>
+                <p>kkkkk</p>
+                <p>kkkkk</p>
+                <p>kkkkk</p>
+                <p>kkkkk</p>
+                <p>kkkkk</p>
+               
+                <a href="">
+                    <iconify-icon icon="streamline-freehand:shopping-cart-trolley" width="20" height="20"
+                        style="color: #fff" class="hover:scale-110 transition duration-300 ease-in-out ">
+                    </iconify-icon>
+                </a>
+            </div>
         </div>
 
         <!-- first section  -->
-        <nav
-            id="navBar" class="w-full z-50 fixed text-white flex justify-between px-4 py-6 md:px-20 mx-auto bg-black md:bg-transparent bg-opacity-30">
+        <nav id="navBar"
+            class="w-full z-50 fixed text-white flex justify-between px-4 py-6 md:px-20 mx-auto bg-black md:bg-transparent bg-opacity-30">
             <!-- hero section  -->
             <div class="flex  items-center">
                 <p>
@@ -181,19 +187,17 @@
                         <p> Contact</p>
                     </a>
 
-                    <!-- Call icon -->
+                    <!-- Cart icon -->
                     <p class="border-l-1 pl -5 h-5 border-white hover:border-[#f5b754]">
                         <a href="">
-                            <!-- <iconify-icon icon="streamline-freehand:shopping-cart-trolley" width="20" height="20"
+                            <iconify-icon icon="streamline-freehand:shopping-cart-trolley" width="20" height="20"
                                 style="color: #fff" class="hover:scale-110 transition duration-300 ease-in-out ">
-                            </iconify-icon> -->
-
-                            <iconify-icon icon="ph:phone-call-light" width="20" height="20" style="color: #fff">
                             </iconify-icon>
                         </a>
                     </p>
                 </div>
 
+                <!-- Contact info  -->
                 <div class="items-center space-x-3 hidden md:flex">
                     <div
                         class="border border-[#f5b754] rounded-full p-3 flex items-center justify-center hover:scale-110 transition duration-300 ease-in-out hover:bg-[#f5b754] font-bold">
@@ -208,6 +212,7 @@
                     </div>
                 </div>
 
+                <!-- mobile menu button  -->
                 <div id="mobileMenuBtn" class="text-[#f5b754] text-xl cursor-pointer lg:hidden">
                     <p>[||]</p>
                 </div>
@@ -407,7 +412,7 @@
         <!-- third section >> Book -->
         <div
             class="text-white w-full py-30 bg-[url(/images/book.jpg)] bg-cover bg-center bg-no-repeat bg-[#333] bg-blend-overlay flex flex-col justify-center items-center space-y-7 md:bg-fixed">
-            
+
             <div class="flex flex-col items-center ">
                 <p class="text-[#f5b754] text-[10px] tracking-[4px] uppercase">
                     rent now
@@ -418,8 +423,7 @@
             </div>
 
             <!-- form bookings  -->
-            <form
-                class=" bg-[#333] space-y-3  max-w-full flex flex-col items-center  py-7 px-12 md:px-20 rounded-2xl 
+            <form class=" bg-[#333] space-y-3  max-w-full flex flex-col items-center  py-7 px-12 md:px-20 rounded-2xl 
                 text-[#ffffff80] lg:flex-row lg:px-7 lg:py-8 lg:rounded-full lg:space-x-3 lg:space-y-0 text-[#f4f4f4]">
 
                 <div>
@@ -491,7 +495,7 @@
         <div class="w-full h-screen bg-[#333] text-[#f4f4f4] flex flex-col md:flex-row justify-center items-center">
             <div class="w-full bg-blue-200 h-full flex justify-center items-center">Luxury Car Fleet</div>
             <div class="w-full bg-blue-400 h-full flex justify-center items-center">Luxury Cars</div>
-         </div>
+        </div>
 
 
 
