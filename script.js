@@ -3,32 +3,34 @@ const btn = document.querySelector('.dropdownDefaultButtonn');
 const dropDownContent = document.getElementById('dropdownn');
 
 
-btn.addEventListener('click', function () {
+btn.addEventListener('click', () => {
     dropDownContent.classList.toggle('hidden');
 });
 
 const serviceBtn = document.querySelector('.serviceDropdownButton');
 const serviceContent = document.getElementById('serviceBtn');
 
-serviceBtn.addEventListener('click', function () {
+serviceBtn.addEventListener('click', () => {
     serviceContent.classList.toggle('hidden');
 });
 
-// const navBarBg = document.getElementById('navBar');
-
-// window.addEventListener('scroll', () => {
-//     if (window.scrollY > 1) {
-//         navBarBg.style.backgroundColor = '#333'
-//         navBarBg.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.3)'
-//         alert('hi')
-//     } 
-//     else {
-//         navBarBg.style.backgroundColor = 'transparent'
-//         navBarBg.style.boxShadow = 'none'
-//     }
-
+const mobileBtn = document.getElementById('#mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+// mobileBtn.addEventListener('click', () => {
+//     mobileMenu.classList.toggle('hidden');
 // });
+mobileBtn.onclick = function () {
+    mobileMenu.classList.toggle('hidden');
+}
 
-// function () {
-//     document.getElementById('navBar').style.scrollbarColor = 'red blue'
-// }
+window.addEventListener('scroll', () => {
+    const navBar = document.getElementById('navBar');
+    if (window.scrollY > 50) {
+        navBar.classList.add('bg-black', 'bg-opacity-90', 'backdrop-blur-lg');
+        navBar.classList.remove('bg-transparent');
+    } else {
+        navBar.classList.remove('bg-black', 'bg-opacity-90', 'backdrop-blur-lg');
+        navBar.classList.add('bg-transparent');
+    }
+});
+
