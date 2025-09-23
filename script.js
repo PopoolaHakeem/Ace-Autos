@@ -7,7 +7,7 @@ const navBar = document.getElementById('navBar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1) {
         navBar.style.backgroundColor = 'rgba(22, 22, 22, 0.9)'
-    } else (screen.width < 768) {
+    } else  {
         navBar.style.backgroundColor = 'rgba(22, 22, 22, 0.9)'
     } 
 }); 
