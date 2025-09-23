@@ -25,7 +25,7 @@
 
         <!-- first section  -->
         <nav
-            class="w-full z-50 fixed text-white bg-none flex justify-between px-4 py-6 md:px-20 mx-auto bg-black md:bg-transparent bg-opacity-30">
+            id="navBar" class="w-full z-50 fixed text-white flex justify-between px-4 py-6 md:px-20 mx-auto bg-black md:bg-transparent bg-opacity-30">
             <!-- hero section  -->
             <div class="flex  items-center">
                 <p>
@@ -37,8 +37,9 @@
             <div class="flex justify-between items-center space-x-5 text-sm">
 
                 <div class="space-x-5 font-extralight hidden lg:flex ">
-                    
-                   <div>
+
+                    <div>
+                        <!-- Home Dropdown button -->
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                             class="text-white bg-transparent hover:text-[#F5b754] hover:scale-105 transition duration-300 ease-in-out focus:outline-none font-medium text-sm text-center inline-flex items-center"
                             type="button">
@@ -93,10 +94,59 @@
                         <p> About</p>
                     </a>
 
+
+
+
                     <!-- Services  -->
-                    <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
-                        <p> Services</p>
-                    </a>
+                    <div>
+                        <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
+                            <p> Service</p>
+                        </a>
+                        <!-- service Dropdown button -->
+                        <!-- <button id="serviceDropdownButton" data-dropdown-toggle="dropdown"
+                            class="text-white bg-transparent hover:text-[#F5b754] hover:scale-105 transition duration-300 ease-in-out focus:outline-none font-medium text-sm text-center inline-flex items-center"
+                            type="button">
+                            Services
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button> -->
+
+                        <!-- Dropdown menu -->
+                        <!-- <div id="serviceBtn" class="z-10 hidden rounded-lg shadow-sm w-44 bg-[#333]">
+                            <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">service 1</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">service 2</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">service 3</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">service 4</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">service 5</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:text-[#F5b754] hover:px-5 duration-300 ease-in-out">service 6</a>
+                                </li>
+                               
+                            </ul>
+                        </div> -->
+                    </div>
+
+
 
                     <!-- Cars  -->
                     <a href="" class="hover:text-[#f5b754] hover:scale-110 transition duration-300 ease-in-out">
@@ -182,12 +232,12 @@
                     <div
                         class="flex flex-col text-[12px] md:text-sm w-50 space-y-5 md:w-full md:flex-row md:space-x-5 md:space-y-0">
                         <button
-                            class="bg-[#f5b754] text-black px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer">
+                            class="bg-[#f5b754] text-black px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer focus:text-[#333] focus:scale-97">
                             View Details ~
                         </button>
 
                         <button
-                            class="border border-[#fff] px-12 py-4 rounded-full font-thin hover:bg-[#f5b754] hover:text-black hover:border-[#f5b754] hover:scale-107 transition duration-300 ease-in-out cursor-pointer">
+                            class="border border-[#fff] px-12 py-4 rounded-full font-thin hover:bg-[#f5b754] hover:text-black hover:border-[#f5b754] hover:scale-107 transition duration-300 ease-in-out cursor-pointer  focus:text-[#333] focus:bg-[#f5b754] focus:scale-97">
                             Rent Now
                         </button>
                     </div>
@@ -219,12 +269,12 @@
                     <div
                         class="flex flex-col text-[12px] md:text-sm w-50 space-y-5 md:w-full md:flex-row md:space-x-5 md:space-y-0">
                         <button
-                            class="bg-[#f5b754] text-black px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer">
+                            class="bg-[#f5b754] text-black px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer focus:text-[#333] focus:scale-97">
                             View Details ~
                         </button>
 
                         <button
-                            class="border border-[#fff] px-12 py-4 rounded-full font-thin hover:bg-[#f5b754] hover:text-black hover:border-[#f5b754] hover:scale-107 transition duration-300 ease-in-out cursor-pointer">
+                            class="border border-[#fff] px-12 py-4 rounded-full font-thin hover:bg-[#f5b754] hover:text-black hover:border-[#f5b754] hover:scale-107 transition duration-300 ease-in-out cursor-pointer focus:text-[#333] focus:bg-[#f5b754] focus:scale-97">
                             Rent Now
                         </button>
                     </div>
@@ -256,12 +306,12 @@
                     <div
                         class="flex flex-col w-50 text-[12px] md:text-sm space-y-5 md:w-full md:flex-row md:space-x-5 md:space-y-0">
                         <button
-                            class="bg-[#f5b754] text-black px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer">
+                            class="bg-[#f5b754] text-black px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer focus:text-[#333] focus:scale-97">
                             View Details ~
                         </button>
 
                         <button
-                            class="border border-[#fff] px-12 py-4 rounded-full font-thin hover:bg-[#f5b754] hover:text-black hover:border-[#f5b754] hover:scale-107 transition duration-300 ease-in-out cursor-pointer">
+                            class="border border-[#fff] px-12 py-4 rounded-full font-thin hover:bg-[#f5b754] hover:text-black hover:border-[#f5b754] hover:scale-107 transition duration-300 ease-in-out cursor-pointer focus:text-[#333] focus:bg-[#f5b754] focus:scale-97">
                             Rent Now
                         </button>
                     </div>
@@ -319,7 +369,7 @@
                     </div>
                     <div>
                         <button
-                            class="bg-[#f5b754] text-black text-[12px] px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer md:text-sm">
+                            class="bg-[#f5b754] text-black text-[12px] px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer md:text-sm focus:text-[#333] focus:scale-97">
                             Read More ~
                         </button>
                     </div>
@@ -343,7 +393,8 @@
 
         <!-- third section >> Book -->
         <div
-            class="text-white w-full h-screenj md:h- py-15 bg-[url(/images/book.jpg)] bg-cover bg-center bg-no-repeat bg-[#333] bg-blend-overlay flex flex-col justify-center items-center space-y-7 md:bg-fixed">
+            class="text-white w-full py-30 bg-[url(/images/book.jpg)] bg-cover bg-center bg-no-repeat bg-[#333] bg-blend-overlay flex flex-col justify-center items-center space-y-7 md:bg-fixed">
+            
             <div class="flex flex-col items-center ">
                 <p class="text-[#f5b754] text-[10px] tracking-[4px] uppercase">
                     rent now
@@ -354,12 +405,13 @@
             </div>
 
             <!-- form bookings  -->
-            <div
-                class="w-[60%] bg-[#333] text-[#ffffff80] rounded-2xl md:text-[#f4f4f4] md:rounded-full p-7 flex flex-col justify-center items-center space-y-5 md:flex-row md:space-y-0 md:space-x-7 ">
+            <form
+                class=" bg-[#333] space-y-3  max-w-full flex flex-col items-center  py-7 px-12 md:px-20 rounded-2xl 
+                text-[#ffffff80] lg:flex-row lg:px-7 lg:py-8 lg:rounded-full lg:space-x-3 lg:space-y-0 text-[#f4f4f4]">
 
                 <div>
                     <select
-                        class="bg-[#333] border border-[#ffffff80] rounded-full mx-auto pr-9 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
+                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-8 py-3 text-sm md:text-[14px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent ">
                         <option selected disabled>Choose Car Type</option>
                         <option>Sedan</option>
                         <option>SUV</option>
@@ -371,9 +423,10 @@
                     </select>
 
                 </div>
+
                 <div>
                     <select
-                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-9 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
+                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-8 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
                         <option selected disabled>Pick Up Location</option>
                         <option>New York</option>
                         <option>Los Angeles</option>
@@ -387,13 +440,13 @@
 
                 <div>
                     <input type="date"
-                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-9 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent"
+                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-5 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent"
                         placeholder="Pick Up Date">
                 </div>
 
                 <div>
                     <select
-                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-9 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
+                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-8 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent">
                         <option selected disabled>Drop Off Location</option>
                         <option>New York</option>
                         <option>Los Angeles</option>
@@ -407,17 +460,25 @@
 
                 <div>
                     <input type="date"
-                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-9 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent"
+                        class="bg-[#333] border border-[#ffffff80] rounded-full pr-5 py-3 text-sm md:text-[16px] focus:outline-none focus:ring-2 focus:ring-[#f5b754] focus:border-transparent"
                         placeholder="Return Date">
                 </div>
 
-                <button>
+                <button class="bg-[#f5b754] text-black text-[12px] px-8 py-3 rounded-full 
+                font-thin hover:scale-105 transition duration-300 ease-in-out cursor-pointer 
+                md:text-sm focus:text-[#f4f4f4] focus:bg-transparent focus:text-[#333] focus:scale-97 ">
 
+                    Rent Now
                 </button>
-            </div>
+
+            </form>
         </div>
 
-
+        <!-- fourth section >> Car Fleet -->
+         <!-- <div class="w-full h-screen bg-[#333] text-[#f4f4f4] flex flex-col md:flex-row justify-center items-center">
+            <div class="w-full bg-blue-200 h-full flex justify-center items-center">Luxury Car Fleet</div>
+            <div class="w-full bg-blue-400 h-full flex justify-center items-center">Luxury Cars</div>
+         </div> -->
 
 
 
