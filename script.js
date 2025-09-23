@@ -6,17 +6,12 @@ const dropDownContent = document.getElementById('dropdownn');
 const navBar = document.getElementById('navBar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1) {
-        // navBar.style.backgroundColor = '#161616'
-        navBar.animate([
-            { backgroundColor: '#161616' },
-            { backgroundColor: 'black' }
-        ], {
-            duration: 300,
-            fill: 'forwards'
-        });
+        navBar.style.backgroundColor = 'rgba(22, 22, 22, 0.9)'
+    } else if (screen.width < 768) {
+        navBar.style.backgroundColor = 'rgba(22, 22, 22, 0.9)'
     } else {
-       navBar.style.backgroundColor = 'transparent'
-    }
+        navBar.style.backgroundColor = 'transparent'
+    }   
 }); 
 
 btn.addEventListener('click', () => {
