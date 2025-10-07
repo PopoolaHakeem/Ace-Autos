@@ -1,11 +1,11 @@
 // alert('hello')
 
-const btn = document.getElementById('homedropdownDefaultButtonn');
-const dropDownContent = document.getElementById('dropdownn');
+const btn = document.querySelector('#homedropdownDefaultButton');
+const dropDownContent = document.querySelector('#dropdown');
 
 
 // body scroll event
-const navBar = document.getElementById('navBar');
+const navBar = document.querySelector('#navBar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1) {
         navBar.style.backgroundColor = 'rgba(22, 22, 22, 0.9)'
@@ -19,19 +19,24 @@ btn.addEventListener('click', () => {
     dropDownContent.classList.toggle('hidden');
 });
 
-const serviceBtn = document.querySelector('.serviceDropdownButton');
-const serviceContent = document.getElementById('serviceBtn');
+// const serviceBtn = document.querySelector('#serviceDropdownButton');
+// const serviceContent = document.querySelector('#serviceBtn');
 
-serviceBtn.addEventListener('click', () => {
-    serviceContent.classList.toggle('hidden');
-});
+// serviceBtn.addEventListener('click', () => {
+//     serviceContent.classList.toggle('hidden');
+// });
 
 
 // mobile nav bar 
-const mobileBtn = document.getElementById('#mobileMenuBtn');
-const mobileMenu = document.getElementById('mobileMenu');
+const mobileBtn = document.querySelector('#mobileMenuBtn');
+const mobileMenu = document.querySelector('#mobileMenu');
 mobileBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+    // alert('clicked!')
 });
 
+
+function clicked() {
+    // alert('clicked!')
+}
 
