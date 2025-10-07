@@ -14,10 +14,9 @@ window.addEventListener('scroll', () => {
     } 
 }); 
 
-
-btn.addEventListener('click', () => {
-    dropDownContent.classList.toggle('hidden');
-});
+// btn.addEventListener('click', () => {
+//     dropDownContent.classList.toggle('hidden');
+// });
 
 // const serviceBtn = document.querySelector('#serviceDropdownButton');
 // const serviceContent = document.querySelector('#serviceBtn');
