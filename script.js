@@ -35,7 +35,9 @@ mobileBtn.addEventListener('click', () => {
 });
 
 
-function clicked() {
-    // alert('clicked!')
-}
+const modelScrollX = document.querySelector('#model');
+modelScrollX.addEventListener('scrollX', () => {
+    modelScrollX.scrollTo('right')
+})
+
 
