@@ -35,10 +35,10 @@ mobileBtn.addEventListener('click', () => {
 });
 
 
-const modelScrollX = document.querySelector('#model');
-modelScrollX.addEventListener('scrollX', () => {
-    modelScrollX.scrollTo('right')
-})
+// const modelScrollX = document.querySelector('#model');
+// modelScrollX.addEventListener('scrollX', () => {
+//     modelScrollX.scrollTo('right')
+// })
 
 const backToTopBtn = document.querySelector('#backToTopBtn')
 window.addEventListener('scroll', () => {
@@ -55,4 +55,22 @@ backToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     })
 })
+
+const form = documet.querySelector('#subscribeForm')
+const emailInput = document.querySelector('#emailInput')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const emailValue = emailInput.value.trim();
+    if(email === '') {
+        alert('Subscribe successfully with: ' + emailValue);
+        form.reset();
+    } else {
+        alert('Please enter a valid email address!');
+    }
+
+    // console.log('Email submitted:', emailValue);
+    // You can add further processing here, such as sending the email to a server
+});
+
 
