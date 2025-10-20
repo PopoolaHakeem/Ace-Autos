@@ -1496,8 +1496,9 @@
             <div
                 class="flex flex-col text-[12px] md:text-sm w-50 space-y-5 md:w-100 md:flex-row md:space-x-5 md:space-y-0 mx-auto">
                 <button
-                    class="bg-[#f5b754] text-black px-10 py-4 rounded-full font-thin hover:scale-107 transition duration-300 ease-in-out cursor-pointer focus:text-[#333] focus:scale-97">
-                    @ WhatsApp
+                    class="bg-[#f5b754] flex justify-center text-black px-10 py-4 rounded-full font-thin space-x-1 hover:scale-107 transition duration-300 ease-in-out cursor-pointer focus:text-[#333] focus:scale-97">
+                    <iconify-icon icon="ri:whatsapp-line" width="15" height="15"  style="color: #000"></iconify-icon>
+                    <h3>WhatsApp</h3>
                 </button>
 
                 <button
@@ -1523,7 +1524,6 @@
                 <div><img src="/images/model-6.png" alt="" width="200" height=""></div>
             </span>
         </div>
-
 
         <!-- contact  -->
         <div
@@ -1615,13 +1615,33 @@
                     </p>
 
                    <div class="">
-                    <input type="text" name="" id="" placeholder="Your email address" class="bg-transparent rounded-full w-80 border-[#f5b754] px-4 py-3 text-[12px] md:w-50 content-center">
+                    <input type="email" name="" id="" placeholder="Your email address" class="bg-transparent rounded-full w-80 border-[#f5b754] px-4 py-3 text-[12px] md:w-50 content-center">
                     
-                    <button type="submit" class="bg-[#f5b754] px-3 py-2 rounded-full relative top-[1px] right-13">
+                    <!-- <button type="submit" class="bg-[#f5b754] px-3 py-2 rounded-full relative top-[1px] right-13">
                         @
-                    </button>
+                    </button> -->
                    </div>
                 </div>
+
+                <!-- <section class="bg-[#1a1a1a] text-white px-4 py-15">
+                    <div class="max-w-xl mx-auto">
+                        <h2 class="text-xl font-bold mb-4">Subscribe</h2>
+
+                        <p class="text-gray-300 mb-8">
+                            Want to be notified about our services. Just sign up and <br>
+                            we'll send you a notification by email.
+                        </p>
+
+                        <div class="flex items-center border border-[#e6b652] rounded-full overflow-hidden">
+                            <input type="email" placeholder="Your email address" class="flex-1 bg-transparent outline-none py-3 px-6 text-white placeholder-gray-400">
+                        </div>
+
+                         <button class="bg-[#e6b652] w-10 h-10 flex items-center justify-center rounded-full mr-2 hover:opacity-80 transition">
+                            @
+                         </button>
+
+                    </div>
+                </section> -->
 
             </div>
 
@@ -1635,6 +1655,14 @@
             </div>
 
         </footer>
+
+        <button id="backToTopBtn" class="hidden fixed bottom-6 right-6 w-14 h-14 flex items-center justify-center border-2 border-[#e6b652] rounded-full 
+            bg-transparent hover:bg-[#e6b652] hover:text-black transition duration-300 z-50">
+            @
+        </button>
+
+
+
 
 
     </div>

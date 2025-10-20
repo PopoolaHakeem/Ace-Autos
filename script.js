@@ -40,4 +40,19 @@ modelScrollX.addEventListener('scrollX', () => {
     modelScrollX.scrollTo('right')
 })
 
+const backToTopBtn = document.querySelector('#backToTopBtn')
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        backToTopBtn.classList.remove('hidden')
+    } else {
+        backToTopBtn.classList.add('hidden')
+    }
+})
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    })
+})
 
