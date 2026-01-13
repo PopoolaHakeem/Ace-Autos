@@ -52,7 +52,7 @@ window.addEventListener('scroll', () => {
 backToTopBtn.addEventListener('click', () => {
     window.scrollTo({
         top:0,
-        behavior: 'smooth'
+        behavior: 'smooth transition 300 ease in out '
     })
 })
 
