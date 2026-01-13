@@ -1,4 +1,4 @@
-alert('hello')
+// alert('hello')
 
 const btn = document.querySelector('#homedropdownDefaultButton');
 const dropDownContent = document.querySelector('#dropdown');
@@ -52,7 +52,7 @@ window.addEventListener('scroll', () => {
 backToTopBtn.addEventListener('click', () => {
     window.scrollTo({
         top:0,
-        behavior: 'smooth transition 300 ease in out '
+        behavior: 'smooth'
     })
 })
 
