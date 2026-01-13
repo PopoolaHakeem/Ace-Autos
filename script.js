@@ -1,4 +1,4 @@
-// alert('hello')
+alert('hello')
 
 const btn = document.querySelector('#homedropdownDefaultButton');
 const dropDownContent = document.querySelector('#dropdown');
